@@ -1,0 +1,33 @@
+name: test
+
+on:
+  # Run on PRs and pushes to the default branch.
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * 0"
+
+# Declare default permissions as read only.
+permissions: read-all
+
+env:
+  # Configure analytics reporting for pub.
+  PUB_ENVIRONMENT: bot.github
+
+jobs:
+  test:
+    name: Run static analysis and verify formatting.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: dart-lang/setup-dart@e51d8e571e22473a2ddebf0ef8a2123f0ab2c02c
+      - name: Fetch Dart packages
+        run: dart pub get
+      - name: Analyze Dart code
+        run: dart analyze --fatal-infos
+      - name: Verify Dart formatting
+        run: dart format --set-exit-if-changed .
