@@ -1,0 +1,17 @@
+# Files and directories created by dart tools.
+doc/api/
+.dart_tool/
+pubspec.lock
+
+# Conventional directory for build output.
+build/
+
+# OS related and other miscellaneous files.
+.DS_Store
+
+# IDE and editor related.
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
