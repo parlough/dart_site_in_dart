@@ -27,7 +27,7 @@ jobs:
       - name: Fetch Dart packages
         run: dart pub get
       - name: Build site
-        run: dart pub global run jaspr_cli:jaspr build --optimize 3
+        run: dart run jaspr_cli:jaspr build --optimize 3
       - name: Deploy to Cloudflare pages
         uses: cloudflare/wrangler-action@392082e81ffbcb9ebdde27400634aa004b35ea37
         with:
