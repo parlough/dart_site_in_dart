@@ -1,7 +1,6 @@
 import 'package:jaspr/server.dart';
 
 import '../components/head.dart';
-import '../config.dart';
 import '../data/page.dart';
 
 class DefaultLayout extends StatelessComponent {
@@ -16,11 +15,10 @@ class DefaultLayout extends StatelessComponent {
       attributes: {'lang': 'en'},
       [
         const Head(),
-        body(classes: '${vars['layout']}', [
+        body([
           a(id: 'skip', href: '#site-content-title', [
             text('Skip to main content'),
           ]),
-          //PageHeader(),
           main_(id: 'page-content', [
             article(classes: 'content', [
               div(id: 'site-content-title', [

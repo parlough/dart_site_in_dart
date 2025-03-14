@@ -14,13 +14,9 @@ on:
 # Declare default permissions as read only.
 permissions: read-all
 
-env:
-  # Configure analytics reporting for pub.
-  PUB_ENVIRONMENT: bot.github
-
 jobs:
   test:
-    name: Run static analysis and verify formatting.
+    name: Run static analysis and verify formatting
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
