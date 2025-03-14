@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      sass_builder:
+        generate_for:
+          - web/assets/main.scss

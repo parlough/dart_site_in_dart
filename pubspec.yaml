@@ -1,4 +1,4 @@
-name: dart_site_in_dart
+name: dart_dev
 description: Building the dart.dev site in Dart.
 publish_to: none
 
@@ -12,6 +12,7 @@ dependencies:
   liquify: ^0.8.2
   markdown: ^7.3.0
   path: ^1.9.1
+  sass: ^1.85.1
   watcher: ^1.1.1
 
 dev_dependencies:
@@ -20,6 +21,7 @@ dev_dependencies:
   dart_flutter_team_lints: ^3.4.0
   jaspr_builder: ^0.18.0
   jaspr_cli: ^0.18.0
+  sass_builder: ^2.2.1
 
 jaspr:
   mode: static

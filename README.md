@@ -17,10 +17,10 @@ Any help is appreciated and I'm excited to see what we can build together!
 - Somehow access page descriptions when generating routes.
 
 - Keep existing site styling with sass functional
-  - Set up sass compilation so we can use our existing styles.
-  - Preferably can integrate with the development/serving workflow.
-  - If possible, should use `expanded` during development and
-    `compressed` when deploying to production.
+  - ~~Set up sass compilation so we can use our existing styles.~~
+  - ~~Preferably can integrate with the development/serving workflow.~~
+  - Use `expanded` format with a source map during development,
+    then `compressed` without source map when deploying to production.
 
 - Support (most of) the Markdown features we already do
   - Share configuration across site and enable each used syntax.
