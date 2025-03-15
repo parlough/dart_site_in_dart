@@ -69,6 +69,8 @@ Any help is appreciated, and I'm excited to see what we can build together!
 - Generate "On this page" TOC based off the `h2` and `h3` headers on each page.
   - This should at least cover Markdown headers.
   - Pages should be able to opt out of having a TOC.
+  - It'd be nice if each page could configure
+    the minimum and max header levels to include in the TOC.
 
 - Generate breadcrumbs for pages which haven't disabled them based
   on their parent directories and the short-titles of their index pages.
@@ -132,8 +134,9 @@ Any help is appreciated, and I'm excited to see what we can build together!
 
 All contributions are welcome, even if not fully complete
 as this is an in-progress experiment.
-Feel free to open up work-in-progress or incompleted PRs,
+Feel free to open up work-in-progress or incomplete PRs,
 as they can provide vital insight and spark interesting conversations.
+Thank you :)
 
 ### Running
 
