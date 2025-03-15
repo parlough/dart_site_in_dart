@@ -5,7 +5,7 @@ site and documentation with mostly Dart.
 
 If you're interested in helping with this exploration,
 consider working on one of the tasks outlined below.
-Any help is appreciated and I'm excited to see what we can build together!
+Any help is appreciated, and I'm excited to see what we can build together!
 
 ## Work to be done
 
@@ -46,9 +46,11 @@ Any help is appreciated and I'm excited to see what we can build together!
   or migrate our usages away from them.
 
 - Fenced code block configuration
-  - Can specify title `title="<title>"`
-  - Can highlight lines with `highlightLine=<range>`
-  - Can add DartPad embed framing when language specifier is `dartpad`
+  - Can specify title with `title="<title>"`.
+  - Can highlight lines with `highlightLine=<range>`.
+  - Can add tags(classes) to the code block for styling.
+  - Can add DartPad embed framing when language specifier is `dartpad`.
+    Generated HTML should match what's expected by [`inject_dartpad`][].
 
 - Syntax highlighting
   - Implement syntax highlighting for fenced Markdown code blocks for
@@ -96,6 +98,7 @@ Any help is appreciated and I'm excited to see what we can build together!
 - Ensure existing JS code for interactivity keeps working.
 
 [definition list]: https://www.markdownguide.org/extended-syntax/#definition-lists
+[`inject_dartpad`]: https://github.com/dart-lang/site-shared/tree/main/pkgs/inject_dartpad
 
 ### Nice to have changes or functionality
 
@@ -124,3 +127,35 @@ Any help is appreciated and I'm excited to see what we can build together!
 [oniguruma-to-es]: https://github.com/slevithan/oniguruma-to-es
 [dart-lang/sdk#54175]: https://github.com/dart-lang/sdk/issues/54175
 [Markdoc]: https://markdoc.dev/
+
+## Contributing
+
+All contributions are welcome, even if not fully complete
+as this is an in-progress experiment.
+Feel free to open up work-in-progress or incompleted PRs,
+as they can provide vital insight and spark interesting conversations.
+
+### Running
+
+For now, you can serve the site with the following command.
+
+```
+dart run jaspr_cli:jaspr serve
+```
+
+You need to reload pages manually after making changes.
+Do document, report, or fix any changes that aren't visible after a reload.
+
+### Building
+
+For now, you can build the site with the following command.
+
+```
+dart run jaspr_cli:jaspr build
+```
+
+This will build the site output in to the `/build/jaspr` directory.
+
+### Staging
+
+The main channel is automatically built and deployed to https://dartdocs.dev/.
